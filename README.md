@@ -5,60 +5,57 @@ Bitext Sample Customer Service Training Dataset for English
 
 Overview
 --------
-This dataset contains example utterances and their corresponding intents from
-the Customer Service domain. The data can be used to train intent recognition models
+This dataset contains sample utterances and their corresponding intents from
+the Customer Service domain, ideal for training intent recognition models for
 Natural Language Understanding (NLU) platforms.
 
-The dataset covers the "Customer Service" domain and includes 27 intents
-grouped in 11 categories. These intents have been selected from Bitext's collection
-of 20 domain-specific datasets (banking, retail, utilities...), keeping the intents
-that are common across domains. See below for a full list of categories and intents.
+The dataset focuses on the "Customer Service" domain and includes 27 intents
+divided into 11 categories. These intents are selected from Bitext's collection
+of 20 domain-specific datasets (such as banking, retail, utilities), emphasizing the intents
+that are common across various domains. Below is a complete list of categories and intents.
 
 Utterances
 ----------
-The dataset contains over 8,000 utterances, with a varying number of utterances
-per intent, including language register variations such as politeness, colloquial,
-swearing, indirect style... To select the utterances, we use stratified sampling
-to generate a dataset with a general user language register profile.
+The dataset comprises over 8,000 utterances, with a varying number of examples
+per intent. It includes variations in language register, such as politeness, colloquial expressions,
+swearing, and indirect styles. Stratified sampling ensures that the dataset represents a general user language register profile.
 
-The dataset also reflects commonly occurring linguistic phenomena
-of real-life chatbots, such as:
-  - spelling mistakes
-  - run-on words
-  - missing punctuation
+The dataset also mirrors linguistic phenomena typically seen in real-life chatbots, such as:
+  - Spelling mistakes
+  - Run-on words
+  - Missing punctuation
 
 Contents
 --------
-Each entry in the dataset contains an example utterance from the Customer Service
-domain, along with its corresponding intent, category and additional linguistic information.
+Each entry in the dataset includes an example utterance from the Customer Service
+domain, alongside its corresponding intent, category, and additional linguistic information.
 Each line contains the following four fields:
-  - flags: the applicable linguistic flags
-  - utterance: an example user utterance
-  - category: the high-level intent category
-  - intent: the intent corresponding to the user utterance
+  - Flags: the applicable linguistic flags
+  - Utterance: an example user utterance
+  - Category: the high-level intent category
+  - Intent: the specific intent corresponding to the user utterance
 
-Linguistic flags
+Linguistic Flags
 ----------------
-The dataset contains annotations for linguistic phenomena, which can be used
-to adapt bot training to different user language profiles. These flags are:
+The dataset includes annotations for linguistic phenomena, which can be used
+to tailor bot training to different user language profiles. These flags are:
   B - Basic syntactic structure
   C - Complex/Coordinated syntactic structure
-  E - Expanded abbreviations (I'm -> I am, I'd -> I would…)
+  E - Expanded abbreviations (e.g., I'm -> I am, I'd -> I would)
   I - Interrogative structure
   K - Keyword only
   L - Lexical variation (synonyms)
-  M - Morphological variation (plurals, tenses…)
+  M - Morphological variation (plurals, tenses)
   P - Politeness variation
   Q - Colloquial variation
   W - Offensive language
-  Z - Noise (spelling, punctuation…)
+  Z - Noise (spelling, punctuation)
 
-These phenomena make the training dataset more effective
-and make bots more accurate and robust.
+These features enhance the training dataset's effectiveness, making bots more accurate and robust.
 
 Categories and Intents
 ----------------------
-The intent categories covered by the dataset are:
+The dataset's intent categories are:
   ACCOUNT
   CANCELLATION_FEE
   CONTACT
@@ -71,33 +68,33 @@ The intent categories covered by the dataset are:
   REFUND
   SHIPPING_ADDRESS
 
-The intents covered by the dataset are:
-  cancel_order
-  change_order
-  change_shipping_address
-  check_cancellation_fee
-  check_invoice
-  check_payment_methods
-  check_refund_policy
-  complaint
-  contact_customer_service
-  contact_human_agent
-  create_account
-  delete_account
-  delivery_options
-  delivery_period
-  edit_account
-  get_invoice
-  get_refund
-  newsletter_subscription
-  payment_issue
-  place_order
-  recover_password
-  registration_problems
-  review
-  set_up_shipping_address
-  switch_account
-  track_order
-  track_refund
+The dataset covers the following intents:
+  - Cancel order
+  - Change order
+  - Change shipping address
+  - Check cancellation fee
+  - Check invoice
+  - Check payment methods
+  - Check refund policy
+  - Complaint
+  - Contact customer service
+  - Contact human agent
+  - Create account
+  - Delete account
+  - Delivery options
+  - Delivery period
+  - Edit account
+  - Get invoice
+  - Get refund
+  - Newsletter subscription
+  - Payment issue
+  - Place order
+  - Recover password
+  - Registration problems
+  - Review
+  - Set up shipping address
+  - Switch account
+  - Track order
+  - Track refund
 
 (c) Bitext Innovations, 2022
